@@ -28,22 +28,27 @@ body {
   max-width: 60%;
   display: flex;
   position: relative;
-  font-size: 20px;
+  font-size: 20;
   color: #1e74fd;
 }
 
-.title {
-  margin: 1em auto;
-  max-width: 60%;
-  display: block;
-  position: relative;
-  font-size: 40px;
-  color: #1e74fd;
+.header {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  color:#0300ff;
+  letter-spacing: 3em;
+  font-weight: 700;
+  background-color: #1968e7;
+}
+
+.member{
+  transform: translateX(-30px);
 }
 
 
 .thin {
-  margin: 1em auto;
   max-width: 60%;
   display: block;
   margin-block-start: 1em;
@@ -53,4 +58,32 @@ body {
   position: relative;
   font-size: 0.8em;
   color: #e9f3aa;
+}
+
+.team{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.teamwrapper{
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: auto auto auto auto; */
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none;
+  color: aliceblue; 
 }
