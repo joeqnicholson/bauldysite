@@ -13,7 +13,6 @@ main
 body {
     font-family: "PlexSerif", serif;
     font-weight: 400;
-    font-style: italic;
     font-size: 1.8rem;
     line-height: 1.25em;
     background: #fff;
@@ -41,10 +40,15 @@ hr
   margin: 1em 0;
 }
 
+.hr-thin {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* subtle gray line */
+  margin: 16px 0; /* space above and below the line */
+}
+
 
 img {
-  scale: .6;
-  transform: translateY();
+
 }
 
 section {
@@ -61,9 +65,10 @@ p, ul {
 }
 
 
-.paragraph {
+.title {
   margin: 1em auto;
   justify-content: center;
+  font-style: italic;
   max-width: 60%;
   display: flex;
   position: relative;
@@ -82,13 +87,27 @@ p, ul {
   background-color: #1968e7;
 }
 
+.center-image {
+  display: block;
+  margin: 16px auto;               /* centers and adds consistent vertical spacing */
+  max-width: 50%;
+  height: auto;
+  box-shadow: 12px 12px 0px #1968e7;
+}
+
+.image-wrapper {
+  margin: 16px auto;            /* consistent spacing */
+  max-width: fit-content;       /* shrinkwrap container to image size */
+  text-align: center;           /* centers image inside wrapper */
+}
+
 .member{
   transform: translateX(-30px);
 }
 
 
 .thin {
-  max-width: 60%;
+  max-width: 80%;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -97,6 +116,31 @@ p, ul {
   position: relative;
   font-size: 0.8em;
   color: #e9f3aa;
+}
+
+.paragraph {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+  margin: 20% auto;
+  max-width: 60%;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.A {
+  color: rgb(47, 65, 104);
+}
+
+.B {
+  color: rgb(47, 65, 104);
+  background-color: #fafafa; /* light grey background */
+  padding: 12px;             /* optional: adds spacing inside */
+  border-radius: 6px;        /* optional: softens corners */
 }
 
 .team{
