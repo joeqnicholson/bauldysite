@@ -76,6 +76,16 @@ p, ul {
   color: #1e74fd;
 }
 
+.logo-link {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  transform: scale(0.5);
+  display: block;
+}
+
 .header {
   display: flex;
   font-size: 20px;
@@ -137,10 +147,7 @@ p, ul {
 }
 
 .B {
-  color: rgb(47, 65, 104);
-  background-color: #fafafa; /* light grey background */
-  padding: 12px;             /* optional: adds spacing inside */
-  border-radius: 6px;        /* optional: softens corners */
+  color: rgb(55, 75, 104);
 }
 
 .team{

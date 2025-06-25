@@ -5,60 +5,72 @@
         <meta charset="UTF-8">
 		<link rel="icon" href="http://www.nollygame.com/SvenIdle.ico">
 	</head>
-            <img src="/logo.png" alt="Italian Trulli">
+            <a href="/" class="logo-link">
+                <img src="/logo.png" alt="Italian Trulli" class="logo-img">
+            </a>
             <hr>
             <section id = "team">
-                <a class="title" href="/blog/one">Making Thematic Game Systems</a>
+                <div class="title" >Making Thematic Game Systems</a>
             </section>
 
-    <div class="image-wrapper">
-        <img src="/wadeonmoney4.png" alt="description" class="center-image">
-    </div>
 
     <div class="paragraph A">
-        I’ve been thinking a lot recently about the distinction between the experience I want to create versus other games in the genre. 
-        Games, film, art in general, doesn’t have to be perfect, not by a long shot. 
-        But in my personal opinion it should at least attempt to justify its existence. 
+        I’ve been thinking a lot recently about the distinction between the experience I want to create with Oyster Wars versus other games in the genre. 
+        Games, film, art in general, doesn’t have to be perfect, not by a long shot, 
+        but in my personal opinion it should at least attempt to justify its existence. 
         To be created and sold just for the sake of it, while fine, is not what I’m trying to achieve. 
         I personally don’t want to play the 100th platformer where you make it to the end of the level and shoot at enemies. 
-        It kind of feels like going to watch the 900th marvel movie, you lost me after Spiderman 2.
-        Discovering the themes that make Oyster Wars unique has been quite a unique challenge;
-        only through creating verbose and bug free systems which allow experimentation and creativity have I been able to truly understand what the game is and in turn, what it’s trying to convey.
+        It kind of feels like going to watch the 100th marvel movie, you lost me after Spiderman 2.
+        Discovering the themes that differentiate Oyster Wars has been quite a unique challenge;
+        only through creating verbose and bug free systems which allow experimentation and creativity 
+        have I been able to truly understand what the game is and in turn, what it’s trying to convey.
     </div>
     <hr class="hr-thin">
+
+    <div class="image-wrapper">
+        <img src="/wadeonmoney6.png" alt="description" class="center-image">
+    </div>
+
+    <div class="paragraph B">
+        Discovering the themes that differentiate Oyster Wars has been quite a unique challenge;
+        only through creating verbose and bug free systems which allow experimentation and creativity
+        have I been able to truly understand what the game is and in turn, what it’s trying to convey.
+    </div>
+    <hr class="hr-thin">
+    
     
     <div class="paragraph A">
         Let's take a second to talk about the difference between games and all other media; the interaction between the art and the observer. 
         While watching a film or listening to music you’re an observer, a listener. 
-        With videogames however you are a participant, you’re involved, and as a designer I have the responsibility to ensure this involvement is focused, congruent with the themes contained in the game, but most of all: 
+        With video games however you are a participant, you’re involved, and as a designer I have the responsibility to ensure this involvement is focused, congruent with the themes contained in the game, but most of all: 
         fresh, engaging and original (although the fresh part usually comes naturally if you stick to the first two).
     </div>
     <hr class="hr-thin">
 
     
     <div class="paragraph A">
-        Put plainly: Oyster Wars is a game about taking and using, the intention of the game is to convey the choice given to everyone of how involved in the capital chasing, industrial, self centered nihilism that’s taking over our culture. 
-        The hookshot is the primary way the player interacts with the world and is, in turn, the main character in the game. 
-        There was a time where I had enemies in the game that the player would shoot at to kill like in any other game, it was samey, and in no way contributed to conveying the intended themes. 
-        In games, levels are stories, and interactions are characters, so having an interaction like plain old shooting is like having a side character in a show that no one asked for. 
+        Put plainly: Oyster Wars is a game about taking and using, 
+        the intention of the game is to convey the choice given to everyone of how involved in the capital chasing, industrial, self centered nihilism that’s taking over Western culture. 
+        The Hookshot is the primary way the player interacts with the world and is the main character of the game. 
+        There was a time when I had enemies in the game that the player would shoot and kill like in any other game, 
+        I decided to put them in because well, other games have them, right?
+        This choice to copy other games made Oyster Wars feel samey, and in no way contributed to conveying the intended themes. 
+        In games, levels are stories and mechanics are characters, so having an interaction like plain old shooting is like having a side character in a show that no one asked for. 
         In my opinion, stories are much better when they’re focused, without diversion. 
-        As I had mentioned in a previous update all enemies that were once only meant to be shot at can now be grabbed and manipulated, like every other object. 
-        This one change, this one choice to stay true to the games themes has transformed the experience in a very positive way. 
+        While wrestling with myself one day and finally figured out what was making the game feel incomplete, it was this under-commitment to the hookshot, my fear of telling a consice and meaningful story.
+        I was becoming the TV executive adding it side characters and plots that no one asked for to pad out the season and make some filler episodes.
+        I made one change to the games code which saved the project from mediocrity. 
     </div>
     <hr class="hr-thin">
     
     <div class="image-wrapper">
         <img src="/codechange.png" alt="description" class="center-image">
     </div>
-
-    
     
     <div class="paragraph A">
         Because of the way I’ve set up the games internals I was able to experiment with this idea almost instantly simply by switching the parent class of Enemy from Actor to Grab Object. 
-        It took about 20 minutes for all enemies to inheret the functionality of all the other grabbable objects in the game. 
-        Being able to experiment with systems dynamically is what allows the levels to unfold. 
-        Using the interactions as characters analogy once more, this would lead us to the conclusion that by creating meaningful characters (interactions) he’s able to craft a meaningful story (the level). 
-        The proccess of dsesign and programming may seem like separate tasks but a good author knows their characters and good game designer does as well.
+        It took about 20 minutes for all enemies to inherit the functionality of all the other grabbable objects in the game.
+        The process of design and programming may seem like separate tasks but a good author knows their characters and good game designer does as well.
     </div>
     <hr class="hr-thin">
 
@@ -66,12 +78,34 @@
         <img src="/cappy.png" alt="description" class="center-image">
     </div>
 
-    <div class="paragraph A">
-        Now this isn’t to say that there always needs to be a lesson or some greater overarching moral dilemma. 
-        Sometimes the theme can be as simple as “in this game you can throw your hat at different enemies” like in Mario Odyssey. 
-        You’ll notice that in this example the character metaphor actually comes into play, the moment marios hat became a gameplay mechanic Nintendo gives it eyes and cute name.
+    <div class="paragraph B">
+        This classification of game mechanics as characters isn't anything new; 
+        In most mainline Mario and Zelda games, the "gimmick" of that game is given eyes and a name.
+        The themes conveyed don't have to be some moral dilemma or life lesson. 
+        In Mario Odyssey the theme is: "You can throw your hat at stuff", and that's more than enough. 
     </div>
     <hr class="hr-thin">
+
+    <div class="image-wrapper">
+        <img src="/gameclasses.png" alt="description" class="center-image">
+    </div>
+
+    <div class="paragraph B">
+        This is now how the class hierarchy looks for Oyster Wars. No enemy is just an enemy,
+        they can all be grabbed and they all have unique behaviour when shot.
+        We're entering a "just do it" era of game design where staying true to the central idea is being recognized and rewarded.
+        Echoes of wisdom wouldn't be the same game if you couldn't clone every enemy. 
+        Mario Odyssey wouldn't be the same game if you couldn't control every enemy.
+        These ideas used to seem like breaking convention but now they're the norm.
+        I intend to follow suit.
+    </div>
+    <hr class="hr-thin">
+
+    <div class="paragraph B">
+        If you're a game developer, or any type of creative for that matter, I hope this article can give you
+        the confidence you need to stick to your original concept, not get dragged down by comparisons and create what you truly set out to.
+    </div>
+
     
 	<div class = "footer"></div>
 </html>
